@@ -1,6 +1,6 @@
-
-        langchain
-        langchain-core
-        langchain-community
-        langchain_groq
+streamlit
+langchain
+langchain-core
+langchain-community
+langchain_groq
         

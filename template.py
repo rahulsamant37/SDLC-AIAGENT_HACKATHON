@@ -15,7 +15,6 @@ def create_directory_structure():
         "src/state",
         "src/tools",
         "src/prompt",
-        "src/UI",
         "src/Utils",
         "src/config"
     ]
@@ -45,6 +44,7 @@ def create_directory_structure():
     # Create root level files
     root_files = {
         "app.py": "",
+        "streamlit_app.py":"",
         "requirements.txt": 
         """
         langchain

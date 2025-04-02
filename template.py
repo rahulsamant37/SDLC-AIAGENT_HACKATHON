@@ -15,8 +15,7 @@ def create_directory_structure():
         "src/state",
         "src/tools",
         "src/prompt",
-        "src/Utils",
-        "src/config"
+        "src/utils",
     ]
     
     other_directories = [

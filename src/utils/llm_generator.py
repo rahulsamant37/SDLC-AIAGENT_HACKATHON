@@ -21,7 +21,7 @@ def get_llm(temperature=0.7):
     """
     # Initialize Google Generative AI client
     return ChatGoogleGenerativeAI(
-        model="gemini-1.5-pro",  # Using Gemini 1.5 Pro model
+        model="gemini-2.0-flash",  # Using Gemini 1.5 Pro model
         google_api_key=GOOGLE_API_KEY,
         temperature=temperature,
     )

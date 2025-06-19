@@ -45,7 +45,7 @@ def get_llm(temperature=0.7, streaming=False, streaming_callback=None):
     # Initialized LLM with model
     llm = ChatGoogleGenerativeAI(
         google_api_key=api_key,
-        model="gemini-1.5-pro",  # Use Gemini 1.5 Pro for high quality results
+        model="gemini-2.0-flash",  # Use Gemini 1.5 Pro for high quality results
         temperature=temperature,
         streaming=streaming,
         callbacks=[StreamingCallbackHandler(streaming_callback)] if streaming and streaming_callback else None,
@@ -87,7 +87,7 @@ def get_available_models() -> List[str]:
         List[str]: Available model names.
     """
     return [
-        "gemini-1.5-pro",
+        "gemini-2.0-flash",
         "gemini-1.5-flash",
         "gemini-1.0-pro",
         "gemini-pro-vision"

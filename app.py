@@ -697,7 +697,7 @@ def main():
 
 def process_requirements(requirements):
     # Initialize LLM
-    llm = ChatGoogleGenerativeAI(google_api_key="YOUR_API_KEY", model="gemini-1.5-pro")
+    llm = ChatGoogleGenerativeAI(google_api_key="YOUR_API_KEY", model="gemini-2.0-flash")
     
     # Create prompt
     prompt = PromptTemplate(

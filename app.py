@@ -677,7 +677,7 @@ def generate_mock_code(requirements):
         "main": """import streamlit as st
 from langchain import LLMChain
 from langchain.prompts import PromptTemplate
-from langchain_community.llms import Groq
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 def main():
     st.title("SDLC Agent")
@@ -697,7 +697,7 @@ def main():
 
 def process_requirements(requirements):
     # Initialize LLM
-    llm = Groq(api_key="YOUR_API_KEY")
+    llm = ChatGoogleGenerativeAI(google_api_key="YOUR_API_KEY", model="gemini-1.5-pro")
     
     # Create prompt
     prompt = PromptTemplate(
@@ -2118,7 +2118,7 @@ def upload_files_to_github(github_token, github_username, repo_name, state, is_n
 fastapi
 pydantic
 langchain
-langchain-groq
+langchain-google-genai
 langchain-community
 langgraph
 uvicorn

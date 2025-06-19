@@ -49,7 +49,7 @@ def create_directory_structure():
         langchain
         langchain-core
         langchain-community
-        langchain_groq
+        langchain_google_genai
         """
     }
 

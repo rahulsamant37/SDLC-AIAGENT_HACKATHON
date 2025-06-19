@@ -12,6 +12,6 @@ requests
 tqdm
 langgraph
 langchain
-langchain_groq
+langchain-google-genai
 langchain_community
 streamlit

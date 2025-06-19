@@ -33,7 +33,7 @@ An intelligent agent that guides users through the entire software development l
 
 - Frontend: Streamlit
 - Backend: Python
-- LLM Integration: Groq (Claude 3.5 Sonnet)
+- LLM Integration: Google Generative AI (Gemini)
 - API: FastAPI
 - Storage: Local Session State
 
@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 4. Create `.env` file and add required environment variables:
 ```
-GROQ_API_KEY=your_api_key_here
+GOOGLE_API_KEY=your_api_key_here
 ```
 
 ## Usage
@@ -116,5 +116,5 @@ This project is licensed under the GNU General Public License v3.0 - see the [LI
 ## Acknowledgments
 
 - Built with [Streamlit](https://streamlit.io/)
-- Powered by [Groq](https://groq.com/)
+- Powered by [Google Generative AI](https://ai.google.dev/)
 - Part of the AI Agent Hackathon

@@ -18,5 +18,5 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: git push --force https://rahulsamant37:$HF_TOKEN@huggingface.co/spaces/rahulsamant37/Hackathon main

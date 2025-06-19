@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 import re
 
-from src.LLMS.groq_llm import get_llm
+from src.LLMS.google_llm import get_llm
 
 def get_supported_languages() -> List[str]:
     """

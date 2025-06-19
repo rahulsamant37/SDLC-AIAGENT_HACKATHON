@@ -5,7 +5,7 @@ from typing import Dict, Any, List, Optional
 import json
 from datetime import datetime
 
-from src.LLMS.groq_llm import get_llm
+from src.LLMS.google_llm import get_llm
 
 def create_security_review_prompt(code_artifacts: Dict[str, str], requirements: str) -> str:
     """

@@ -12,8 +12,8 @@ from src.nodes.code_generator import code_generator_node
 from src.nodes.security_reviewer import security_review_node
 from src.nodes.test_generator import test_generator_node
 from src.nodes.multimodal_processor import process_design_with_image
-from langchain_groq import ChatGroq
-from src.LLMS.groq_llm import get_llm
+from langchain_google_genai import ChatGoogleGenerativeAI
+from src.LLMS.google_llm import get_llm
 
 def analyze_project_complexity(requirements: str) -> Dict[str, Any]:
     """

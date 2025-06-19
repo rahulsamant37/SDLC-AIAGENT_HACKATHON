@@ -13,7 +13,7 @@ import logging
 from dotenv import load_dotenv
 from langchain.chains import ConversationChain
 
-from src.LLMS.groq_llm import get_llm
+from src.LLMS.google_llm import get_llm
 from src.state.sdlc_state import SDLCState, SDLCStage
 from src.graph.dynamic_graph_builder import build_sdlc_graph, get_dynamic_graph_description, analyze_project_complexity
 from src.monitoring.workflow_monitor import monitor_workflow_progress, get_monitoring_summary

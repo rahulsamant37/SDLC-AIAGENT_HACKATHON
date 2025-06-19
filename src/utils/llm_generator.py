@@ -1,34 +1,34 @@
 """
-LLM-based content generation utilities using Groq API.
+LLM-based content generation utilities using Google Generative AI.
 """
 import os
-from langchain_groq import ChatGroq
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 import traceback
 
-# Initialize Groq client with API key
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+# Initialize Google API key
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 def get_llm(temperature=0.7):
     """
-    Get a Groq LLM instance.
+    Get a Google Generative AI LLM instance.
     
     Args:
         temperature (float): The temperature for generation.
         
     Returns:
-        ChatGroq: The LLM instance.
+        ChatGoogleGenerativeAI: The LLM instance.
     """
-    # Initialize Groq client for code generation
-    return ChatGroq(
-        model="qwen-2.5-32b",  # Using Llama 3 model
-        api_key=GROQ_API_KEY,
+    # Initialize Google Generative AI client
+    return ChatGoogleGenerativeAI(
+        model="gemini-1.5-pro",  # Using Gemini 1.5 Pro model
+        google_api_key=GOOGLE_API_KEY,
         temperature=temperature,
     )
 
 def generate_content(prompt_template, input_variables):
     """
-    Generate content using Groq LLM with improved error handling and retry logic.
+    Generate content using Google Generative AI LLM with improved error handling and retry logic.
     
     Args:
         prompt_template (str): The prompt template.
@@ -79,11 +79,11 @@ def generate_content(prompt_template, input_variables):
             if retry_count >= max_retries:
                 return f"""# Service Currently Unavailable
 
-The Groq API service is experiencing issues after {max_retries} retry attempts.
+The Google Generative AI service is experiencing issues after {max_retries} retry attempts.
 
 This might be a temporary issue with the service. Please try the following:
 1. Wait a few moments and try again
-2. Check your Groq API key is valid and properly configured
+2. Check your Google API key is valid and properly configured
 3. If the problem persists, consider switching to an alternative model or service
 
 Error details: {error_msg}

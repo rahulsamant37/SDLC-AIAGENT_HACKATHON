@@ -7,7 +7,7 @@ import time
 import json
 from collections import defaultdict
 
-from src.LLMS.groq_llm import get_llm
+from src.LLMS.google_llm import get_llm
 
 def parse_datetime(datetime_str: str) -> datetime:
     """

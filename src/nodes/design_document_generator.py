@@ -5,7 +5,7 @@ from typing import Dict, Any, List, Optional
 import json
 from datetime import datetime
 
-from src.LLMS.groq_llm import get_llm
+from src.LLMS.google_llm import get_llm
 
 def create_design_document_prompt(requirements: str, user_stories: str, is_functional: bool = True) -> str:
     """

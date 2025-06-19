@@ -8,9 +8,9 @@ import io
 from datetime import datetime
 from PIL import Image
 
-from langchain_groq import ChatGroq
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import ChatPromptTemplate
-from src.LLMS.groq_llm import get_llm
+from src.LLMS.google_llm import get_llm
 
 def extract_diagrams_from_design(design_document: str) -> List[str]:
     """

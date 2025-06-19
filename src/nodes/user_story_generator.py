@@ -5,7 +5,7 @@ from typing import Dict, Any, List, Optional
 import json
 from datetime import datetime
 
-from src.LLMS.groq_llm import get_llm
+from src.LLMS.google_llm import get_llm
 
 def create_user_story_prompt(requirements: str, requirements_analysis: str) -> str:
     """
